@@ -6,6 +6,12 @@ import pickle
 import cv2
 import face_recognition
 import shutil
+import subprocess
+
+# Install system dependencies
+if "linux" in sys.platform:
+    subprocess.run(["apt-get", "update"])
+    subprocess.run(["apt-get", "install", "-y", "libgl1-mesa-glx", "libglib2.0-0"])
 
 # -----------------------------
 # Page configuration and custom CSS
