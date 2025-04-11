@@ -1,4 +1,5 @@
 cmake
 build-essential
-libgl1
-python3-dev
+libopenblas-dev
+liblapack-dev
+libboost-all-dev
